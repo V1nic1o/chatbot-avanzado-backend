@@ -151,7 +151,7 @@ async function procesarMensaje(req, res) {
       return res.json({ respuesta, fuente });
     }
 
-    // 🤖 OpenAI con historial
+    // 🤖 
     const resultado = await obtenerRespuesta(mensajeLimpio, historialConversacion);
 
     if (

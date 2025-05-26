@@ -22,8 +22,7 @@ async function obtenerRespuesta(mensajeUsuario, historialConversacion = []) {
     };
   }
 
-  // 2. Usar OpenAI si hay clave
-  if (process.env.OPENAI_API_KEY) {
+  if (process.env._API_KEY) {
     try {
       const systemPrompt = {
         role: 'system',
