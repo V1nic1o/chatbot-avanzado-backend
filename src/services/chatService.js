@@ -22,7 +22,8 @@ async function obtenerRespuesta(mensajeUsuario, historialConversacion = []) {
     };
   }
 
-  if (process.env.AI_KEY) {
+  // 2.
+  if (process.env.OPENAI_API_KEY) {
     try {
       const systemPrompt = {
         role: 'system',
