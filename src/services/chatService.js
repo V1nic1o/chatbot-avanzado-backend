@@ -22,7 +22,7 @@ async function obtenerRespuesta(mensajeUsuario, historialConversacion = []) {
     };
   }
 
-  if (process.env._API_KEY) {
+  if (process.env.AI_KEY) {
     try {
       const systemPrompt = {
         role: 'system',
